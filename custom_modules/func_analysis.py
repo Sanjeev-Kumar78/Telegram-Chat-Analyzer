@@ -51,9 +51,9 @@ def visualize_emoji(data):
     """
         This function is used to make pie chart of popular emoji's.
     """
-    emoji_df = pd.DataFrame(popular_emoji(data), columns=['emoji', 'count'], color_discrete_map="identity", title='Emoji Distribution')
+    emoji_df = pd.DataFrame(popular_emoji(data), columns=['emoji', 'count'])
     
-    fig = px.pie(emoji_df, values='count', names='emoji')
+    fig = px.pie(emoji_df, values='count', names='emoji', color_discrete_map="identity", title='Emoji Distribution')
     fig.update_traces(textposition='inside', textinfo='percent+label')
     # fig.show()
     return fig
