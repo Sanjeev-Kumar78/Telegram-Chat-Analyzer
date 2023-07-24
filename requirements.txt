@@ -1,7 +1,8 @@
-wordcloud==1.9.2
-streamlit==1.18.1
 plotly==5.15.0
-pandas==1.4.3
 numpy==1.23.1
-matplotlib==3.7.0
-emoji==0.6.0
+wordcloud==1.9.2
+pandas==2.0.2
+matplotlib==3.7.1
+streamlit==1.23.1
+plotly==5.15.0
+emoji==2.5.0

@@ -23,7 +23,7 @@ def extract_emojis(s):
     """
         This function is used to calculate emojis in text and return in a list.
     """
-    return [c for c in s if c in emoji.UNICODE_EMOJI]
+    return [c for c in s if c in emoji.EMOJI_DATA]
 
 
 def stats(data):
@@ -51,7 +51,7 @@ def visualize_emoji(data):
     """
         This function is used to make pie chart of popular emoji's.
     """
-    emoji_df = pd.DataFrame(popular_emoji(data), columns=['emoji', 'count'])
+    emoji_df = pd.DataFrame(popular_emoji(data), columns=['emoji', 'count'], color_discrete_map="identity", title='Emoji Distribution')
     
     fig = px.pie(emoji_df, values='count', names='emoji')
     fig.update_traces(textposition='inside', textinfo='percent+label')
@@ -189,7 +189,7 @@ def chatter(data):
         DESCRIPTION.
 
     """
-    auth = data.groupby("Author").sum()
+    auth = data.groupby("Author").sum(numeric_only=True)
     auth.reset_index(inplace=True)
     fig = px.bar(auth, y="Author", x="MessageCount", color='Author', orientation="h",
              color_discrete_sequence=["red", "green", "blue", "goldenrod", "magenta"],
