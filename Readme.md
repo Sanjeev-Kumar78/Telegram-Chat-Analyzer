@@ -1,7 +1,15 @@
 # Telegram-Chat-Analyzer :chart_with_upwards_trend: :speech_balloon:
 
+1. 📓 Open the Telegram desktop app and sign in to your account.
+2. ⚙️ Go to Settings > Privacy and Security > Export Telegram Data.
+3. 🗂️ Select the chat or group that you want to export.
+4. 🗒️ Choose JSON as the format.
+5. 💾 Click Export.
+6. 🗒️ The exported data will be saved in a file named chat_export.json in the Telegram Desktop folder on your computer.
+7. 🔼 Now, you have to upload this chat_export.json file to Telegram Chat Analyzer. That's it! 🚀
 
 * ***Important: Don't worry, none of your data is stored.*** :lock:
+***
 ## Contributing :raising_hand_man:
 **1.** Fork [this](https://github.com/sanjeev-kumar78/Telegram-Chat-Analyzer/) repository.
 Click on the <a href="https://github.com/sanjeev-kumar78/Telegram-Chat-Analyzer/"><kbd><img src="https://img.icons8.com/material/24/000000/code-fork--v1.png"/></a> symbol at the top right corner.
