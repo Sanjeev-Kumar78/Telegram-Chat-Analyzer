@@ -3,6 +3,6 @@ numpy==1.23.1
 wordcloud==1.9.2
 pandas==2.0.2
 matplotlib==3.7.1
-streamlit==1.23.1
+streamlit==1.30.0
 plotly==5.15.0
 emoji==2.5.0
