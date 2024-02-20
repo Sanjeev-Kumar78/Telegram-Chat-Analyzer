@@ -23,12 +23,16 @@ def startsWithAuthor(s):
             True if it contains author name otherwise False
     """
 
-    pattern = '^([\w()\[\]-]+):|([\w]+[\s]+([\w()\[\]-]+))'
-    result = re.match(pattern, s)
-    if result:
+    # pattern = '^([\w()\[\]-]+):|([\w]+[\s]+([\w()\[\]-]+))'
+    # result = re.match(pattern, s)
+    # if result:
+    #     return True
+    # return False
+    """Authors Name along with emojis are also considered"""
+    if s.find(":") != -1:
         return True
-    return False
-
+    else:
+        return False
 
 def getDataPoint(line):
     """

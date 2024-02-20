@@ -20,6 +20,7 @@ st.set_page_config(page_title="Telegram Chat Analyzer",
 st.header("Telegram Chat Analyzer")
 
 # ------------------------------------------------
+
 # Sidebar
 st.sidebar.title("Telegram Chat Analyzer")
 
